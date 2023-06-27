@@ -59,6 +59,7 @@ article {
 
 h5 {
     margin-bottom: 4rem;
+    margin-top: 2rem
 }
 
 .baby-circle {
@@ -87,3 +88,4 @@ h5 {
 .baby-circle.green {
     background-color: var(--green);
 }
+

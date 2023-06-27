@@ -1,4 +1,83 @@
+:root {
+    --background: #f0f0f0;
+    --primary: #e6e6e6;
+    --red: #e6563b;
+    --orange: #eb9d3a;
+    --green: #7cb06c;
+    --blue: #00aba9;
+    --headerFont: 'Anton', sans-serif;
+    --bodyFont: 'Abel', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'abel', sans-serif;
+}
+
 .custom-border {
-    border-width: 10px !important;
-    border-color: inherit;
+    width: 100%;
+    aspect-ratio: 270/175;
+    object-fit: cover;
+    border: 10px solid var(--primary);
+}
+
+header {
+    font-family: 'abel', sans-serif;
+    font-size: 1rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+#menu-items {
+    color: grey;
+}
+
+.circle-text {
+    font-family: 'anton', sans-serif;
+    color: #ffffff;
+
+}
+
+#top-row {
+    font-family: 'anton', sans-serif;
+}
+
+p {
+    font-family: 'abel', sans-serif;
+}
+
+article {
+    font-family: 'abel', sans-serif;
+}
+
+h5 {
+    margin-bottom: 4rem;
+}
+
+.baby-circle {
+    width: 20px;
+    flex: 0 0 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: dimgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baby-circle.red {
+    background-color: var(--red);
+}
+
+.baby-circle.orange {
+    background-color: var(--orange);
+}
+
+.baby-circle.blue {
+    background-color: var(--blue);
+}
+
+.baby-circle.green {
+    background-color: var(--green);
 }

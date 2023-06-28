@@ -124,7 +124,9 @@ h5 {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    .bi-list {
+        display:none;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */

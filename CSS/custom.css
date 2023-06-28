@@ -1,3 +1,7 @@
+.px-5 {
+    padding-right: 18rem!important;
+    padding-left: 18rem!important;
+}
 .container .align-items-center {
     padding-bottom: 3rem;
 }

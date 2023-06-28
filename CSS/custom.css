@@ -147,23 +147,29 @@ h5 {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
-    @media (max-width: 575px) {
-        .hamburger,
-        .toggle-menu{
+@media (max-width: 576px) {
+    .hamburger,
+    .toggle-menu{
             display: block;
-        }
-        .menu {
+    }
+
+    .menu {
             justify-content: start;
             flex-direction: column;
-        }
-        body {
-            overflow-x: hidden;
-        }
-        .col-4 {
-            display: none;
-        }
     }
+
+    body {
+            overflow-x: hidden;
+    }
+
+    .col-4, .ms-4 {
+            display: none;
+    }
+
+    #menu-items, #border-lining {
+            display: none;
+    }
+
 
 }
 
@@ -171,7 +177,7 @@ h5 {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    /* CSS styles specific to small devices */
+
 }
 
 /* Medium devices (tablets, 768px and up) */

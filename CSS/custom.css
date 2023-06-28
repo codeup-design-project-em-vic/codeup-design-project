@@ -36,7 +36,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-#menu-items {
+#menu {
     color: grey;
 }
 
@@ -90,16 +90,83 @@ h5 {
     background-color: var(--green);
 }
 
+.hamburger,
+.toggle-menu{
+    display: none;
+}
+
+.hamburger {
+    position: relative;;
+    width: 30px;
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: black;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger:before{
+    top: -10px;
+    width: 20px;
+}
+.hamburger:after{
+    top: 10px;
+    width: 25px;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.navigation input:checked ~ .hamburger{
+    background: transparent;
+}
+.navigation input:checked ~ .hamburger:before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .hamburger:after{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
-    body {
-        overflow-x: hidden;
+    @media (max-width: 575px) {
+        .hamburger,
+        .toggle-menu{
+            display: block;
+        }
+        .menu {
+            justify-content: start;
+            flex-direction: column;
+        }
+        body {
+            overflow-x: hidden;
+        }
+        .col-4 {
+            display: none;
+        }
     }
-    .col-4 {
-        display: none;
-    }
+
 }
+
 
 
 /* Small devices (landscape phones, 576px and up) */

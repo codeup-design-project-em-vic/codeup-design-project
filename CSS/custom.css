@@ -15,7 +15,7 @@
     border: 10px solid var(--primary);
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
+
 @media (max-width: 576px) {
     .list-inline-item:nth-child(1),
     .list-inline-item:nth-child(2),

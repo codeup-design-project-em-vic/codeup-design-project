@@ -31,6 +31,7 @@ header {
     font-family: 'abel', sans-serif;
     font-size: 1rem;
 }
+
 h3 {
     font-size: 1.5rem;
 }
@@ -89,3 +90,34 @@ h5 {
     background-color: var(--green);
 }
 
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    body {
+        overflow-x: hidden;
+    }
+    .col-4 {
+        display: none;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* CSS styles specific to small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* CSS styles specific to medium devices */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* CSS styles specific to large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* CSS styles specific to extra large devices */
+}
